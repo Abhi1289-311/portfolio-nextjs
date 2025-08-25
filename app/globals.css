@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg: #000000;
+    --fg: #e5e5e5;
+}
+
+html,
+body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--fg);
+}
+
+a {
+    @apply underline underline-offset-4;
+}
+
+.container {
+    @apply mx-auto max-w-5xl px-4;
+}
+
+.section {
+    @apply py-10 md:py-14;
+}
+
+.h1 {
+    @apply text-3xl md:text-5xl font-bold;
+}
+
+.h2 {
+    @apply text-2xl md:text-3xl font-semibold;
+}
+
+.h3 {
+    @apply text-xl md:text-2xl font-semibold;
+}
+
+.muted {
+    @apply text-neutral-300;
+}
+
+.card {
+    @apply rounded-2xl border border-white/10 bg-white/5 p-6;
+}
